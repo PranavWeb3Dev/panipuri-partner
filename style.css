@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  margin: 0 0;
+  padding: 0 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffe5ec;
+}
+
+section {
+  min-height: 100vh;
+  padding: 40px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.row {
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+}
+
+div#date-asking-container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 34px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  color: #2b2d42 !important;
+  text-shadow: 3px 2px 10px #ff8fab;
+}
+#button-container {
+  margin-bottom: 20px;
+}
+
+button#accepted-btn {
+  padding: 12px 40px;
+  cursor: pointer;
+  background-color: #ff8fab;
+  border: none;
+  box-shadow: 1px 3px 0px rgba(0, 0, 0, 0.8);
+  margin: 10px 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  transition: all 0.6s ease-in-out;
+}
+button#accepted-btn:hover {
+  background-color: #fb6f92;
+  transform: scale(1.1);
+}
+button#denied-btn {
+  padding: 12px 40px;
+  border: none;
+  background-color: #d0d96e;
+  border-radius: 20px;
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  box-shadow: 1px 3px 0px rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+button#denied-btn:hover {
+  background-color: #faffc2;
+}
+p.message {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.hidden {
+  display: none;
+}
+
+.animate-btn {
+  animation: animate-no-btn 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes animate-no-btn {
+  0% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
